@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id" translate="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="description" content="Kode promo resmi Oryvia — Berlaku di oryvia.my.id" />
+  <title>DISKON • ORYVIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar Responsif -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">
+        <img src="assets/posters/logo.jpg" alt="Oryvia" class="nav-logo" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/" class="nav-link active">Beranda</a></li>
+        <li><a href="/tiket/" class="nav-link">Tiket</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Splash Iklan -->
+  <div id="splash" class="overlay">
+    <div class="splash-container">
+      <button id="close-splash" class="btn-close" aria-label="Tutup">&times;</button>
+      <div class="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <img src="assets/posters/promo1.jpg" alt="Promo Oryvia" class="slide" loading="lazy" />
+          <img src="assets/posters/promo2.jpg" alt="Promo Tahun Baru" class="slide" loading="lazy" />
+          <img src="assets/posters/promo3.jpg" alt="Promo Ramadhan" class="slide" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Konten Utama -->
+  <main id="app" class="app hidden">
+    <header class="brand-header">
+      <h1 class="brand-title">PROMO RESMI<span class="brand-dot"></span></h1>
+      <p class="brand-subtitle">Berlaku di <a href="https://oryvia.my.id" target="_blank" rel="noopener">oryvia.my.id</a></p>
+    </header>
+
+    <section class="events-grid" id="events-grid"></section>
+
+    <!-- Modal Voucher -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <button id="close-modal" class="btn-close">&times;</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
