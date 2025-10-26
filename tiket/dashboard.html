@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiket Saya • Oryvia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+
+  <nav class="dash-nav">
+    <div class="dash-logo">
+      <img src="../assets/posters/logo.jpg" alt="Oryvia" />
+    </div>
+    <div class="dash-user">
+      <span>user@oryvia.com</span>
+      <a href="index.html">Keluar</a>
+    </div>
+  </nav>
+
+  <main class="dash-main">
+    <header class="dash-header">
+      <h1>Tiket Dukungan</h1>
+      <button id="new-ticket-btn" class="btn-primary">+ Buka Tiket Baru</button>
+    </header>
+
+    <!-- Daftar Tiket -->
+    <div class="tickets-list">
+      <div class="ticket-card">
+        <div class="ticket-header">
+          <h3>Masalah Pembayaran</h3>
+          <span class="ticket-status status-open">Dibuka</span>
+        </div>
+        <p class="ticket-preview">Pembayaran gagal saat checkout...</p>
+        <time>12 Okt 2025</time>
+      </div>
+      <div class="ticket-card">
+        <div class="ticket-header">
+          <h3>Pertanyaan Domain</h3>
+          <span class="ticket-status status-closed">Ditutup</span>
+        </div>
+        <p class="ticket-preview">Bagaimana cara transfer domain...</p>
+        <time>5 Okt 2025</time>
+      </div>
+    </div>
+
+    <!-- Modal Buka Tiket -->
+    <div id="new-ticket-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Buka Tiket Baru</h2>
+        <form id="ticket-form">
+          <input type="text" placeholder="Judul Tiket" required />
+          <textarea placeholder="Deskripsi masalah..." required></textarea>
+          <div class="form-footer">
+            <button type="button" id="close-ticket-modal">Batal</button>
+            <button type="submit" class="btn-primary">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
