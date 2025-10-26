@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Tiket • Oryvia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-page">
+
+  <nav class="dash-nav">
+    <div class="dash-logo">
+      <img src="../assets/posters/logo.jpg" alt="Oryvia" />
+    </div>
+    <div class="dash-user">
+      <span>admin001</span>
+      <a href="index.html">Keluar</a>
+    </div>
+  </nav>
+
+  <main class="dash-main">
+    <header class="dash-header">
+      <h1>Dashboard Admin</h1>
+      <nav class="admin-tabs">
+        <a href="#" class="tab active">Tiket</a>
+        <a href="#">Pengguna</a>
+        <a href="#">Pengaturan</a>
+      </nav>
+    </header>
+
+    <!-- Daftar Tiket (Admin View) -->
+    <div class="tickets-list">
+      <div class="ticket-card admin-view">
+        <div class="ticket-header">
+          <h3>Masalah Pembayaran</h3>
+          <span class="ticket-status status-open">Dibuka</span>
+        </div>
+        <p class="ticket-preview">Pembayaran gagal saat checkout...</p>
+        <div class="ticket-actions">
+          <button class="btn-reply">Balas</button>
+          <button class="btn-close">Tutup</button>
+        </div>
+        <div class="ticket-chat hidden">
+          <div class="chat-message admin">Sudah kami cek, silakan coba lagi.</div>
+          <div class="chat-message user">Sudah berhasil, terima kasih!</div>
+          <textarea placeholder="Balas pesan..."></textarea>
+          <button class="btn-primary">Kirim</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
